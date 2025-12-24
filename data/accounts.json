@@ -1,0 +1,14 @@
+[
+  {
+    "account_id": "CHK-1001",
+    "owner_name": "Alex Smith",
+    "balance": 1200.50,
+    "currency": "USD"
+  },
+  {
+    "account_id": "SAV-2001",
+    "owner_name": "Jamie Lee",
+    "balance": 5400.00,
+    "currency": "USD"
+  }
+]

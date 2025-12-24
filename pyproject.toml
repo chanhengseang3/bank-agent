@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bank-agent"
+version = "0.1.0"
+description = "AI Agent to assist bankers by connecting to a core banking system."
+authors = [{ name = "Bank Agent Team" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0,<3.0",
+    "rich>=13.0,<14.0",
+    "typer>=0.9,<0.10",
+]
+
+[project.urls]
+Homepage = "https://example.com/bank-agent"
+
+[tool.typer]
+enable-completion = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["src"]
